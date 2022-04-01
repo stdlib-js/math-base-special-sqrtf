@@ -1,0 +1,33 @@
+{
+  "name": "@stdlib/math-base-special-sqrtf",
+  "version": "0.0.0",
+  "description": "Compute the principal square root of a single-precision floating-point number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-sqrtf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.sqrtf",
+    "sqrtf",
+    "principal",
+    "square",
+    "root",
+    "power",
+    "number"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
