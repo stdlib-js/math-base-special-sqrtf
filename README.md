@@ -30,10 +30,14 @@ The principal [square root][square-root] is defined as
 
 <!-- <equation class="equation" label="eq:principal_square_root" align="center" raw="\sqrt{x^2} = \begin{matrix} x, & \textrm{if}\ x \geq 0\end{matrix}" alt="Principal square root"> -->
 
-<div class="equation" align="center" data-raw-text="\sqrt{x^2} = \begin{matrix} x, &amp; \textrm{if}\ x \geq 0\end{matrix}" data-equation="eq:principal_square_root">
+```math
+\sqrt{x^2} = \begin{matrix} x, & \textrm{if}\ x \geq 0\end{matrix}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\sqrt{x^2} = \begin{matrix} x, &amp; \textrm{if}\ x \geq 0\end{matrix}" data-equation="eq:principal_square_root">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fd65465ee942bbb6e3856d58268e1ee90d570989/lib/node_modules/@stdlib/math/base/special/sqrtf/docs/img/equation_principal_square_root.svg" alt="Principal square root">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,14 +45,30 @@ The principal [square root][square-root] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-sqrtf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import sqrtf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrtf@deno/mod.js';
+var sqrtf = require( '@stdlib/math-base-special-sqrtf' );
 ```
 
 #### sqrtf( x )
@@ -87,9 +107,9 @@ var v = sqrtf( -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import sqrtf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrtf@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var sqrtf = require( '@stdlib/math-base-special-sqrtf' );
 
 var x;
 var i;
@@ -106,7 +126,88 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/sqrtf.h"
+```
+
+#### stdlib_base_sqrtf( x )
+
+Computes the principal [square root][square-root] of a single-precision floating-point number.
+
+```c
+float y = stdlib_base_sqrtf( 9.0f );
+// returns 3.0f
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+float stdlib_base_sqrtf( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/sqrtf.h"
+#include <stdio.h>
+
+int main() {
+    float x[] = { 3.14f, 9.0f, 0.0f, 0.0f/0.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_sqrtf( x[ i ] );
+        printf( "sqrt(%f) = %f\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -133,7 +234,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -177,7 +278,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -197,11 +298,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cbrtf]: https://github.com/stdlib-js/math-base-special-cbrtf/tree/deno
+[@stdlib/math/base/special/cbrtf]: https://github.com/stdlib-js/math-base-special-cbrtf
 
-[@stdlib/math/base/special/rsqrtf]: https://github.com/stdlib-js/math-base-special-rsqrtf/tree/deno
+[@stdlib/math/base/special/rsqrtf]: https://github.com/stdlib-js/math-base-special-rsqrtf
 
-[@stdlib/math/base/special/sqrt]: https://github.com/stdlib-js/math-base-special-sqrt/tree/deno
+[@stdlib/math/base/special/sqrt]: https://github.com/stdlib-js/math-base-special-sqrt
 
 <!-- </related-links> -->
 
