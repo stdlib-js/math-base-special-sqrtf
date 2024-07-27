@@ -63,7 +63,7 @@ The principal [square root][square-root] is defined as
 ## Usage
 
 ```javascript
-import sqrtf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrtf@esm/index.mjs';
+import sqrtf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrtf@v0.2.2-esm/index.mjs';
 ```
 
 #### sqrtf( x )
@@ -109,7 +109,7 @@ var v = sqrtf( -4.0 );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import sqrtf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrtf@esm/index.mjs';
+import sqrtf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrtf@v0.2.2-esm/index.mjs';
 
 var x;
 var i;
