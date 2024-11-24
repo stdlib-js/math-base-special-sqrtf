@@ -6,12 +6,23 @@
 
 ## Unreleased (2024-11-24)
 
+<section class="reverts">
+
+### Reverts
+
+-   [`e5ce2d6`](https://github.com/stdlib-js/stdlib/commit/e5ce2d609f303ac075cee06bfc453cddea9d039c) - chore: update to modern benchmark Makefile
+
+</section>
+
+<!-- /.reverts -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`e5ce2d6`](https://github.com/stdlib-js/stdlib/commit/e5ce2d609f303ac075cee06bfc453cddea9d039c) - **revert:** chore: update to modern benchmark Makefile _(by Philipp Burckhardt)_
 -   [`ac4992b`](https://github.com/stdlib-js/stdlib/commit/ac4992b3eeccbfcceea795f86cf669b2481d8250) - **chore:** update to modern benchmark Makefile _(by Philipp Burckhardt)_
 -   [`06981ee`](https://github.com/stdlib-js/stdlib/commit/06981eeef888c1b48ed3824051cbdccbaa49983c) - **build:** add WebAssembly configuration for `math/base/special/abs2f` and `math/base/special/sqrtf` [(#3026)](https://github.com/stdlib-js/stdlib/pull/3026) _(by Aman Bhansali, Athan Reines)_
 -   [`272ae7a`](https://github.com/stdlib-js/stdlib/commit/272ae7ac5c576c68cfab1b6e304c86407faa20cd) - **docs:** remove comment _(by Athan Reines)_
